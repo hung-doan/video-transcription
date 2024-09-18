@@ -1,4 +1,5 @@
 ﻿openai-whisper==20231117
 av==13.0.0
 webrtcvad==2.0.10
+pydub==0.25.1
 #torch==2.4.1+cu118

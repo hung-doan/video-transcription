@@ -1,0 +1,22 @@
+services:
+  app:
+    image: hungdoan/video-transcription-dev:latest
+    build: 
+      context: .
+      target: dev
+    environment:
+      - MODEL_NAME=${MODEL_NAME}
+      - DEVICE=${DEVICE}
+    volumes:
+      - ./src:/app
+      - ./input:/input
+      - ./output:/output
+      - ./models/whisper:/root/.cache/whisper # Cache the model files
+    working_dir: /app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
