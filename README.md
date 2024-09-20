@@ -107,7 +107,7 @@ Where:
 - DEVICE: It can be "cuda" or "cpu", the "cuda" is recommended if you have GPU(s) has CUDA cores. The default is `cuda`
 - `-v ${input_dir}:/input` : we need to specify (mount) input folder so that the tool could scans input videos
 - `-v ${output_dir}:/output`: we need to specify (mount) output folder to save the file. 
-
+- `-v ${model_cache_dir}:/root/.cache/whisper`: optionally, we can specify the model folder to keep downloaded model and reuse it.
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
