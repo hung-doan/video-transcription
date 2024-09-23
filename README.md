@@ -50,7 +50,7 @@ There are five model sizes, offering speed and accuracy tradeoffs. Below are the
 |  base  |  `base`       |     ~1 GB     |      ~16x      |
 | small  |  `small`       |     ~2 GB     |      ~6x       |
 | medium |  `medium`      |     ~5 GB     |      ~2x       |
-| large  |  `large`       |    ~10 GB     |       1x       | 
+| large  |  `large-v3`       |    ~10 GB     |       1x       | 
 
 (Source: [Whisper](https://github.com/openai/whisper))
 
